@@ -1,0 +1,17 @@
+train_net: "train.prototxt"
+test_net: "test.prototxt"
+test_interval: 400
+test_iter: 200
+base_lr: 0.1
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 64000
+stepvalue: 96000
+display: 50
+max_iter: 120000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 800
+solver_mode: GPU
+type: "SGD"
+snapshot_prefix: "../models/res20"
